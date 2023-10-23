@@ -15,7 +15,7 @@
 */
 
 const num = +prompt ("Введите целое число в интервале [1, 32)");
-if (num > 31 || num < 1) {
+if (num > 31 || num < 1 || Number.isNaN(num)) {
     console.log("Неверное значение");
     } else if (num < 11) {
         console.log(`Число ${num} попадает в 1 декаду месяца.`);
